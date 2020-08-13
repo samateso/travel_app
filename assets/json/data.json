@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Kenya",
+        "image": "assets/images/africa-kenya.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Congo",
+        "image": "assets/images/falls-Congo.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Madagascar",
+        "image": "assets/images/madagascar-4601292_1920.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Sahara",
+        "image": "assets/images/sand-sahara.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Senegal",
+        "image": "assets/images/saly-beach-senegal.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Afrique du Sud",
+        "image": "assets/images/zebra-southafrica.jpg"
+    }
+]
