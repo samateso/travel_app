@@ -2,31 +2,37 @@
     {
         "id": 1,
         "name": "Kenya",
-        "image": "assets/images/africa-kenya.jpg"
+        "image": "assets/images/africa-kenya.jpg",
+        "description":"Le parc national d'Amboseli se situe au nord du Kilimanjaro. Il est un des plus grands célèbres parcs nationaux du Kenya, et le deuxième plus visité du pays après le parc du Masaï Mara. De ses Huttes on aperçoit le Kilimandjaro. Il a été classé réserve de biosphère de l'UNESCO depuis 1980"
     },
     {
         "id": 2,
         "name": "Congo",
-        "image": "assets/images/falls-Congo.jpg"
+        "image": "assets/images/falls-Congo.jpg",
+        "description":"C’est au cœur d’une luxuriante végétation, dans une dense forêt, que les sublimes chutes de Zongo étalent leur récital de merveilles. Joyau de la nature très prisée aussi bien des touristes que des locaux, elles vous embarqueront pour des instants de pur bonheur. Du haut de leurs 65 mètres, elles se projettent dans la rivière avec une telle frénésie que toutes attentions leur sont vouées. Havre de paix pour vivre un pique-nique en famille ou entre amis, cette somptueuse cascade est aussi une source idéale de méditation et de réflexion, de jour comme de nuit. Vous y vivrez des aventures inoubliables !"
     },
     {
         "id": 3,
         "name": "Madagascar",
-        "image": "assets/images/madagascar-4601292_1920.jpg"
+        "image": "assets/images/madagascar-4601292_1920.jpg",
+        "description":"L'île aux Nattes, aussi appelée Nosy Nato en malgache, est une petite île de l'océan Indien située à la pointe sud de l'île Sainte-Marie et donc au large de la côte orientale de Madagascar, dont elle dépend. Comme sa voisine du nord, elle relève administrativement de la province de Tamatave. L'île est sans voitures et sa population est d’environ 1500 habitants. Agniribe et Sainte-marie en sont deux villages"
     },
     {
         "id": 4,
         "name": "Sahara",
-        "image": "assets/images/sand-sahara.jpg"
+        "image": "assets/images/sand-sahara.jpg",
+        "description":"Le Sahara est un vaste désert chaud situé dans la partie nord du continent africain. Il s'étend sur 5 000 km d'ouest en est, de l'océan Atlantique à la mer Rouge, et couvre plus de 8,5 millions de km², ce qui en fait la plus grande étendue de terre aride d'un seul tenant dans le monde"
     },
     {
         "id": 5,
         "name": "Senegal",
-        "image": "assets/images/saly-beach-senegal.jpg"
+        "image": "assets/images/saly-beach-senegal.jpg",
+        "description":"Saly Portudal (ou couramment Saly) est une station balnéaire située sur la Petite-Côte, au sud de Dakar. Avec ses 17 hôtels et ses 33 résidences pour un total de 10 000 lits, Saly est le plus grand centre touristique de l’Afrique de l’Ouest"
     },
     {
         "id": 6,
         "name": "Afrique du Sud",
-        "image": "assets/images/zebra-southafrica.jpg"
+        "image": "assets/images/zebra-southafrica.jpg",
+        "description":"Sabi Sand Game Reserve est situé à côté du parc national Kruger dans le Lowveld de Mpumalanga, en Afrique du Sud."
     }
 ]

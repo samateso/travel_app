@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:travel_test/details.dart';
 import 'package:travel_test/models/country_model.dart';
 
 void main() => runApp(MyApp());
@@ -62,7 +63,8 @@ class MyApp extends StatelessWidget {
           }
           List<Country> dataCountry = snapshot.data;
 
-          return Container(
+          return GestureDetector(
+            child:  Container(
             decoration: BoxDecoration(
               image: DecorationImage(image: AssetImage(dataCountry[itemIndex].image), fit: BoxFit.fitHeight),
               color: Colors.grey,
@@ -77,7 +79,17 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               alignment: Alignment.bottomCenter),
+              
+            ),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Details(country: dataCountry[itemIndex])),
+              );
+            },
           );
+          
+          
         }
       )
 
