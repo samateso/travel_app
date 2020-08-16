@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:travel_test/details_book.dart';
 import 'package:travel_test/models/country_model.dart';
+import 'package:travel_test/utils/details_infos.dart';
 
 
 
@@ -24,59 +26,39 @@ Details({Key key, @required this.country}) : super(key: key);
           ),
           
           
-          Positioned(
-            child:GestureDetector(
-              child: Icon(Icons.arrow_back, color: Colors.white, size: 40,),
-              onTap: () {
-              Navigator.pop(context);
-            }
-          ),
-          top: 40,
-          left: 10
-          ),          
+          back_button(context),
           Positioned(
             child: Text(country.name, style: TextStyle(fontSize: 40, color: Colors.white)),
             top: 200,
             left: 10,
           ),
-          Positioned(child: _schedule(),
+          Positioned(child: schedule(),
             top: 250,
             left: 10,
           ),
-          Positioned(child: _position(),
+          Positioned(child: position(),
             top: 250,
             left: 100
           ),
-          Positioned(child: _contentText(country),
+          Positioned(child: GestureDetector(
+              child: _contentText(country),
+              onTap: () {
+                Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => DetailsBook(country: country)),
+              );
+              },
+            ),
             top: 300,
             left: 10,
           )
         ],
-      ) 
-      
-      
-     
+      )      
     );
   }
 
 
-  Widget _schedule() {
-    return Row(
-      children: [
-        Icon(Icons.schedule, color: Colors.white),
-        Text(" 15 jours", style: TextStyle(color: Colors.white),)
-      ],
-    );
-  }
 
-  Widget _position() {
-    return Row(
-      children: [
-        Icon(Icons.flag, color : Colors.white),
-        Text(" 900 kms", style: TextStyle(color: Colors.white),)
-      ],
-      );
-  }
 
   Widget _contentText(Country country) {
     return Container(

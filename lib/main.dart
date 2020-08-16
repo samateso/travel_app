@@ -11,10 +11,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp (
-      title: "tzqt",
       home : Scaffold(
         appBar: AppBar(
-          title: Text('Carousel in vertical scrollable'),
+          title: Text('Visit Africa', style: TextStyle(color: Colors.black),),
+          elevation: 0,
+          backgroundColor: Colors.white,
         ),
         body: ListView.builder(
           padding: EdgeInsets.symmetric(vertical: 16.0),
@@ -27,6 +28,7 @@ class MyApp extends StatelessWidget {
             }
           },
           itemCount: 1,
+          
         ),
       )
     );
@@ -38,7 +40,7 @@ class MyApp extends StatelessWidget {
       children: <Widget>[
         SizedBox(
           // you may want to use an aspect ratio here for tablet support
-          height: 650.0,
+          height: MediaQuery.of(context).size.height - 100,
           child: PageView.builder(
             // store this controller in a State to save the carousel scroll position
             controller: PageController(viewportFraction: 0.8),
@@ -100,7 +102,9 @@ class MyApp extends StatelessWidget {
 
 Future<List<Country>> loadJson() async {
   String data = await rootBundle.loadString('assets/json/data.json');
-  return parseCountry(data);
+  List<Country> countries = parseCountry(data);
+  countries.sort((a,b) => a.name.compareTo(b.name));
+  return countries;
 }
 
 // A function that converts a response body into a List<Country>.
